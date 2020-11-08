@@ -1,8 +1,13 @@
 # A Developer's Introduction to Containers
 
-Welcome to a Developer's Introduction to Containers. By the end of the workshop you will have acheived three outcomes: 1. You'll understand what containers are and how they came onto the scene, 2. You'll be able to containerize an application and run it locally, and 3. You'll be able to deploy your container image to a remote registry.
+Welcome to a Developer's Introduction to Containers. 
 
-To complete this workshop, you will need to have Docker installed on your machine as well as an account on Docker Hub. If you'd like to complete the bonus section and you don't have access to a Kubernetes cluster, you can deploy a local cluster by enabling it in Docker Desktop.
+By the end of the workshop you will have acheived three outcomes: 
+1. You'll understand what containers are and how they came onto the scene 
+2. You'll be able to containerize an application and run it locally  
+3. You'll be able to deploy your container image to a remote registry.
+
+To complete this workshop, you will need to have Docker installed on your machine as well as an account on Docker Hub.
 
 ## Part 1: What are containers and how did they get here?
 
@@ -10,7 +15,7 @@ To complete this workshop, you will need to have Docker installed on your machin
 
 If there are two words that come to mind when you think containers, they should be **process isolation**.
 
-> “Put most simply, a process is an instance of an executing program...processes are the entities among which the kernel must share the various resources of the computer.”Michael Kerrisk, _The Linux Programming Interface_
+> “Put most simply, a process is an instance of an executing program...processes are the entities among which the kernel must share the various resources of the computer.” Michael Kerrisk, _The Linux Programming Interface_
 
 A **container** is a process, or group of processes running in isolation. This isolation is achieved by leveraging several features of the Linux kernel. Two of the main features are **namespaces** and **cgroups**. 
 
@@ -35,6 +40,8 @@ The software Docker created to interact with the Linux kernel was packaged into 
 In this section, we'll use a minimal Python application to demonstrate how to containerize an application. This one is written by my friend Mofi Rahman and it greets a website visitor by name and then provides them a quote of the day. After containerizing, you are strongly encouraged to customize the application.
 
 Make sure you get a copy of the repository locally by cloning it with Git.
+
+`git clone https://github.com/pnbrown/containers-intro`
 
 ### The application
 
@@ -139,7 +146,7 @@ Now that we've built our image, we can run it locally and see our process(es) ru
 
 When we've built our container, it get stored in the local container registry on our machine. You can see all the images currently in our local registry (cookbook) with the `docker images` command. Some recipes are too good to keep to ourselves. We can share it by publishing it to a remote registry. For our case, we'll share it to Docker Hub.
 
-### Push it to dockerhub
+### Push it to Docker Hub
 
 We refer to putting images in repositories as "pushing" them. Once you log into your Docker account, you can then push your image to your repository. Once it's there, anyone can "pull" your image to their local registry and run it.
 
