@@ -1,0 +1,6 @@
+.vscode
+.Dockerignore
+venv/
+.gitignore
+.git/
+README.md

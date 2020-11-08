@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<title>Quote of The Day</title>
+
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+  body {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    margin: 10px;
+  }
+
+  h1 {
+    color: #2297b1;
+    font-size: 3em;
+  }
+
+  h2 {
+    color: #6932c1;
+    font-size: 2em;
+  }
+
+  h3 {
+    color: #329bc1;
+    font-size: 1.5em;
+  }
+
+  .author {
+    text-align: right;
+    margin-right: 20px;
+  }
+</style>
+
+<body>
+  <div class="block1">
+    <h1>Hello {{name}}!</h1>
+    <h2>Here is an interesting quote for you:</h2>
+    <h3>"{{quote}}"</h3>
+    <h3 class="author">--{{author}}</h3>
+  </div>
+</body>
+
+</html>
