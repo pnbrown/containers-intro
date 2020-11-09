@@ -29,7 +29,7 @@ One use of cgroups is assigning a maximum amount of resources each group can all
 
 #### The how:
 
-Containers are not a particularly new technology. They falls under a class of virtualization called Operating System Level Virtualization. It's possible that you became familiar with some other iteration of this technology. We'll touch on some of the more notable points:
+Containers are not a particularly new technology. They fall under a class of virtualization called Operating System Level Virtualization. It's possible you're already familiar with some other iteration of this technology. We'll touch on some of the more notable points:
 
 Unix in 1982 had a feature called chroot which allows the "root" directory to be changed. This had an effect of isolation, but for security, it is rarely the best choice. The first major point we have for commercial adoption of what came to be known as containerization was from Virtuozzo's release in 2000. The next point of note is the concept of Zones which came from the Solaris operating system in 2005. It's notable that the term "container" most likely came from Solaris. The widespread adoption, and, anecdotally, the first interaction with containers came with Linux Containers or lxc in 2008. When Docker came on the scene in 2013, they weren't creating new technology per se, but making it easier and more secure to leverage containers for today's workloads. In fact, Docker's initial releases used lxc before they wrote their own implementation.
 
@@ -105,7 +105,7 @@ Container images are created in modular layers. Generally, each line in a Docker
 
     `CMD ["./hello.py"]`
 
-All together, your Dockerfile should be comprised of what follows:
+Your Dockerfile should look like the example below:
 
 ```
 FROM python:alpine3.7
