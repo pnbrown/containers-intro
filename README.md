@@ -73,7 +73,7 @@ Container images are created in modular layers. Generally, each line in a Docker
 
 
 
-1. The first line of our Dockerfile defines a base image. We're using one created by the Python organization that uses the Alpine operating system:
+1. The first line of our Dockerfile defines a base image. We're using one created by the Python organization that uses the Buster operating system:
 
     `FROM python:slim-buster`
 
