@@ -75,7 +75,7 @@ Container images are created in modular layers. Generally, each line in a Docker
 
 1. The first line of our Dockerfile defines a base image. We're using one created by the Python organization that uses the Alpine operating system:
 
-    `FROM python:alpine3.7`
+    `FROM python:slim-buster`
 
 2. The second line creates and sets our working directory for the image for any of the subsequent adding, copying, or running of files:
 
@@ -108,7 +108,7 @@ Container images are created in modular layers. Generally, each line in a Docker
 Your Dockerfile should look like the example below:
 
 ```
-FROM python:alpine3.7
+FROM python:slim-buster
 
 WORKDIR /app
 
